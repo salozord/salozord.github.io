@@ -5,7 +5,6 @@ ADD LINK
 
 ##Libraries or External Code/Elements
 The following libraries or external code/elements were used apart from my own work during the development of this webpage:
-    * favicon of the page (Used with for free, non-commercial purpose): [See the item and license here](https://www.123rf.com/photo_67567189_stock-vector-letter-s-unusual-bold-rounded-font-gradient.html)
     * ADITIONAL ELEMENTS
 
 ##Page's Domain (URL)
