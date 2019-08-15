@@ -1,1 +1,7 @@
 /* GENERAL STYLING OF THE PAGE */
+header {
+    height: 10vh;
+}
+.contenido {
+    height: 90vh;
+}
