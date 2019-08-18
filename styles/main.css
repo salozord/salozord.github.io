@@ -1,19 +1,24 @@
 /* GENERAL STYLING OF THE PAGE */
 body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #CFD2CD;
+    color: #babbb9;
 }
 #nav {
     min-height: 10vh;
     text-transform: uppercase;
     font-weight: 700;
+    font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .contenido {
     height: 90vh;
     z-index: 1;
 }
 footer {
-    height: 40vh;
+    min-height: 40vh;
+    position: static;
+    bottom: 0;
+    left:0;
+    width: 100%;
     color: white;
 }
 .bg-primary, .text-primary {
@@ -23,16 +28,39 @@ footer {
     background-color: #31C69A;
 }
 .bg-tertiary {
-    background-color: #CFD2CD;
+    background-color: #babbb9;
 }
 .bg-light {
     background-color: white !important;
 }
 .bg-dark {
-    background-color: #1E1E24;
+    background-color: #1E1E24 !important;
 }
-h1, h2, h3, h4, h5, h6, .condensed {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1E1E24;
+    font-weight: 700;
+    font-size: 30pt;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 3rem;
+}
+em {
+    font-style: normal;
+}
+.grad-back { 
+    background-image:         linear-gradient(to top, #41748C, #31C69A);
+    background-image:      -o-linear-gradient(top, #41748C, #31C69A);
+    background-image:    -moz-linear-gradient(top, #41748C, #31C69A);
+    background-image: -webkit-linear-gradient(top, #41748C, #31C69A); 
+    background-color: #41748C;
+}
+.grad-front {
+    color:         linear-gradient(to top, #41748C, #31C69A);
+    color:      -o-linear-gradient(top, #41748C, #31C69A);
+    color:    -moz-linear-gradient(top, #41748C, #31C69A);
+    color: -webkit-linear-gradient(top, #41748C, #31C69A); 
+    color: #41748C;
 }
 a {
     color: #41748C !important;
@@ -52,6 +80,6 @@ a:active, a:focus, a:hover {
     color: #CFD2CD !important;
     border-color: #CFD2CD !important;
 }
-.section {
-    height: 100%;
-}
+/* .section {
+    min-height: 90vh;
+} */
