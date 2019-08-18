@@ -1,7 +1,19 @@
 /* GENERAL STYLING OF THE PAGE */
 header {
     height: 10vh;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 .contenido {
     height: 90vh;
+    background-color: brown;
 }
+footer {
+    height: 40vh;
+    color: white;
+}
+
+/* SPECIFIC CONTENT */
