@@ -22,7 +22,7 @@ window.onload = () => {
         setTimeout(()=> {
             dad.removeChild(pic);
             dad.prepend(newpic);
-        },990);
+        },960);
     }
     setInterval(changePic, 5000);
 };
