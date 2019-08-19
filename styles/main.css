@@ -87,10 +87,6 @@ nav .navbar-toggler, .navbar-toggler-icon {
 .section {
     min-height: 90vh !important;
 }
-#profile-pic {
-    box-shadow: inset 0px 0px 40px 40px white;
-}
-
 
 
 
