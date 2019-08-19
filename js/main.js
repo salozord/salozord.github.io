@@ -1,4 +1,4 @@
-console.log('is working!');
+
 window.onload = () => {
 
     var path = './assets/img/';
