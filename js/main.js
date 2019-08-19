@@ -25,4 +25,8 @@ window.onload = () => {
         },960);
     }
     setInterval(changePic, 5000);
+
+   $('.nav-link').on('click',function() {
+        $('.navbar-collapse').collapse('hide');
+    });
 };
