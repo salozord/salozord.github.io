@@ -21,6 +21,8 @@
     <title>CV - Santiago Salazar Álvarez</title>
     <!-- KIT DE FONTAWESOME PARA ÍCONOS -->
     <script src="https://kit.fontawesome.com/e8d6a2f083.js"></script>
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -126,7 +128,7 @@
         </div>
       </section>
       <section id="interests" class="section py-3">
-        <h2 class="text-center text-md-right my-2 my-md-4 py-3 pr-0 pr-md-5">Interests</h2>
+        <h2 class="text-center text-md-right my-2 my-md-4 py-3 pr-0 pr-md-5">Interests & Hobbies</h2>
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="shadow p-3 rounded col-12 col-md-4 m-3 d-flex align-items-center coloring">
@@ -139,7 +141,7 @@
               <i class="fas fa-keyboard fa-2x mr-3"></i>Learning throughout online courses
             </div>
             <div class="shadow p-3 rounded col-12 col-md-4 m-3 d-flex align-items-center coloring">
-              <i class="fas fa-user-check fa-2x mr-3"></i>Active member of the ACM Chapter
+              <i class="fas fa-user-check fa-2x mr-3"></i>Member of the ACM Chapter
             </div>
             <div class="shadow p-3 rounded col-12 col-md-4 m-3 d-flex align-items-center coloring">
               <i class="fas fa-table-tennis fa-2x mr-3"></i>Constant sport practicing
@@ -155,53 +157,62 @@
             </div>
             <div class="col-12 col-md-4 m-1 d-flex flex-column justify-content-center align-items-center">
               <h4 class="text-center">Audio</h4>
-              <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/21151733&color=%2341748c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+              <audio src="./assets/audio/Tenerife Sea.mp3" controls></audio>
             </div>
           </div>
         </div>
       </section>
       <section id="academic" class="section py-3">
-          <h2 class="text-center text-md-left my-2 my-md-4 py-3 pl-0 pl-md-5">Academics & Experience</h2>
-          <div class="container">
-            <div class="row">
-              <dl class="col-12 col-md-6 d-flex flex-column align-items-start">
-                <h3 class="text-center text-md-left">Education</h3>
-                <dt>TOEFL</dt>
-                <dd><em>Summer 2016.</em> 91/120 score</dd>
-                <dt>Computer and Systems Engineering</dt>
-                <dd><em>2017 - Current.</em> University of Los Andes</dd>
-              </dl>
-              <dl class="col-12 col-md-6 d-flex flex-column align-items-end right">
-                <h3 class="text-center text-md-right">Professional Experience</h3>
-                <dt>Cofounder of GGITApps</dt>
-                <dd><em>Fall 2017 - Current.</em> Cofounder of GGITApps, a company which develops software (mobile and web solitions)
-                  <a href="https://www.facebook.com/GGITApps/" target="_blank" class="font-weight-bold">
-                    Visit site
-                  </a>
-                </dd>
-                <dt>Cofounder of Apoyémonos</dt>
-                <dd><em>Fall 2017 - Current.</em> Personalized tutorships on programming in Java and Python language for subjects at the University
-                  <a href="https://www.facebook.com/APOyemonos/" target="_blank" class="font-weight-bold">
-                    Visit site
-                  </a>
-                </dd>
-                <dt>Freelancer Developer</dt>
-                <dd><em>Winter 2017 - Current.</em> Developer specified in web and mobile applications with different programming languages</dd>
-                <dt>Tutorships at Univesity</dt>
-                <dd><em>Fall 2018 - Current.</em> Working as tutor for the subject named <q>Fundamentos de Infraestructura tecnológica</q> at the University</dd>
-                <dt>Cofounder of Residia</dt>
-                <dd><em>Spring 2019 - Current.</em> Startup created based on an application to generate technological solutions for residential complexes
-                  <a href="https://residia.co" target="_blank" class="font-weight-bold">
-                    Visit site
-                  </a>
-                </dd>
-              </dl>
+        <h2 class="text-center text-md-left my-2 my-md-4 py-3 pl-0 pl-md-5">Academics & Experience</h2>
+        <div class="container">
+          <div class="row">
+            <dl class="col-12 col-md-6 d-flex flex-column align-items-start">
+              <h3 class="text-center text-md-left mb-4">Education</h3>
+              <dt>TOEFL</dt>
+              <dd><em>Summer 2016.</em> 91/120 score</dd>
+              <dt>Computer and Systems Engineering</dt>
+              <dd><em>Spring 2017 - Current.</em> University of Los Andes</dd>
+            </dl>
+            <dl class="col-12 col-md-6 d-flex flex-column align-items-end right">
+              <h3 class="text-center text-md-right mb-4">Professional Experience</h3>
+              <dt>Cofounder of GGITApps</dt>
+              <dd><em>Fall 2017 - Current.</em> Cofounder of GGITApps, a company which develops software (mobile and web solitions)
+                <a href="https://www.facebook.com/GGITApps/" target="_blank" class="font-weight-bold">
+                  Visit site
+                </a>
+              </dd>
+              <dt>Cofounder of Apoyémonos</dt>
+              <dd><em>Fall 2017 - Current.</em> Personalized tutorships on programming in Java and Python language for subjects at the University
+                <a href="https://www.facebook.com/APOyemonos/" target="_blank" class="font-weight-bold">
+                  Visit site
+                </a>
+              </dd>
+              <dt>Freelancer Developer</dt>
+              <dd><em>Winter 2017 - Current.</em> Developer specified in web and mobile applications with different programming languages</dd>
+              <dt>Tutorships at Univesity</dt>
+              <dd><em>Fall 2018 - Current.</em> Working as tutor for the subject named <q>Fundamentos de Infraestructura tecnológica</q> at the University</dd>
+              <dt>Cofounder of Residia</dt>
+              <dd><em>Spring 2019 - Current.</em> Startup created based on an application to generate technological solutions for residential complexes
+                <a href="https://residia.co" target="_blank" class="font-weight-bold">
+                  Visit site
+                </a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <h2 class="text-center text-md-right my-2 my-md-4 py-3 pr-0 pr-md-5">Skills</h2>
+          <div class="row justify-content-around">
+            <div class="col-12 col-md-5">
+              <h3 class="text-center mb-4">Tech Stuff</h3>
+              <div class="radarChart1"></div>
+            </div>
+            <div class="col-12 col-md-5">
+              <h3 class="text-center mb-4">Languages</h3>
+              <div class="radarChart2"></div>
             </div>
           </div>
-      </section>
-      <hr>
-      <section id="skills" class="section">
-
       </section>
     </div>
     <!-- FOOTER -->
@@ -222,8 +233,10 @@
         </div>
     </footer>
 
-    <!-- Mi script de JS -->
+    <!-- My script of JS  and RadarChart.js -->
+    <script src="./js/radarChart.js"></script>
     <script src="./js/main.js"></script>
+
     <!-- Imports de bootstrap a nivel de js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
