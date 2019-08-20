@@ -12,8 +12,11 @@ nav {
 }
 .contenido {
     min-height: 90vh;
+    position: static;
+    top: 10vh;
+    left: 0;
     z-index: 1;
-    padding-top: 10vh !important;
+    margin-top: 10vh !important;
 }
 footer {
     min-height: 30vh;
@@ -53,6 +56,10 @@ h1 {
 em {
     font-style: normal;
     color: #41748C;
+}
+dd > em {
+    font-style: italic;
+    font-weight: 600;
 }
 a {
     color: #41748C !important;
@@ -96,8 +103,8 @@ a:focus, a:hover {
 .but:hover, .but:focus {
     text-decoration: none;
     color: #fff !important;
-    background-color: #4ab8a1 !important;
-    border-color: #4ab8a1 !important;
+    background-color: #31C69A !important;
+    border-color: #31C69A !important;
 }
 
 /* SPECIFIC CONTENT */
@@ -120,6 +127,26 @@ nav .navbar-toggler, .navbar-toggler-icon {
         max-width: 15vw;
         margin: 0 auto;
     }
+}
+.coloring {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #41748C
+}
+.coloring:hover {
+    color: white;
+    background-color: #31C69A
+}
+dl > dt {
+    color: #1E1E24;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+dl > dd {
+    margin: 1rem 2rem;
+}
+dl.right > dd {
+    text-align: right;
 }
 
 h4.title-media {
