@@ -8,8 +8,8 @@
 }
 html, body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--tertiary);
     color: #848C8E;
+    color: var(--tertiary);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -30,28 +30,28 @@ nav {
 footer {
     min-height: 30vh;
     padding: 0 3rem; 
-    color: var(--light);
     color: white;
+    color: var(--light);
 }
 .bg-light {
-    background-color: var(--light) !important;
     background-color: white !important;
+    background-color: var(--light) !important;
 }
 .bg-dark {
-    background-color: var(--dark) !important;
     background-color: #1E1E24 !important;
+    background-color: var(--dark) !important;
 }
 h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--primary);
     color: #41748C;
+    color: var(--primary);
     font-weight: 700;
     text-transform: uppercase;
 }
 h1 {
     font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--dark);
     color: #1E1E24;
+    color: var(--dark);
     font-weight: 700;
     font-size: 30pt;
     text-transform: uppercase;
@@ -59,22 +59,22 @@ h1 {
 }
 em {
     font-style: normal;
-    color: var(--primary);
     color: #41748C;
+    color: var(--primary);
 }
 dd > em {
     font-style: italic;
     font-weight: 600;
 }
 a {
-    color: var(--primary) !important;
     color: #41748C !important;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;  
+    color: var(--primary) !important;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;  
 }
 a:focus, a:hover {
-    color: var(--secondary) !important;
     color: #31C69A !important;
+    color: var(--secondary) !important;
 }
 .fadingIn {
     animation:in 1s;
@@ -99,42 +99,40 @@ a:focus, a:hover {
     font-size: 0.92rem;
     line-height: 1.5;
     border-radius: 3rem;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    color: var(--primary) !important;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     color: #41748C !important;
+    color: var(--primary) !important;
     background-color: transparent;
     background-image: none;
-    border-color: var(--primary) !important;
     border-color: #41748C !important;
+    border-color: var(--primary) !important;
 }
 .but:hover, .but:focus {
     text-decoration: none;
-    color: #fff !important;
-    background-color: var(--secondary) !important;
+    color: white !important;
+    color: var(--light);
     background-color: #31C69A !important;
-    border-color: var(--secondary) !important;
+    background-color: var(--secondary) !important;
     border-color: #31C69A !important;
+    border-color: var(--secondary) !important;
 }
 
 /* SPECIFIC CONTENT */
 nav .navbar-toggler, .navbar-toggler-icon {
-    color: var(--tertiary) !important;
     color: #848C8E !important;
-    border-color: var(--tertiary) !important;
+    color: var(--tertiary) !important;
     border-color: #848C8E !important;
+    border-color: var(--tertiary) !important;
 }
 .section {
     min-height: 90vh !important;
     padding-top: 10vh !important;
 }
 ul>li>a.current {
-    color: var(--secondary) !important;
     color: #31C69A !important;
+    color: var(--secondary) !important;
 }
-/* #about.section {
-    margin: 0 auto !important;
-} */
 .card-img-top {
     max-width: 40vw;
     margin: 0 auto;
@@ -146,20 +144,20 @@ ul>li>a.current {
     }
 }
 .coloring {
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    color: var(--primary);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     color: #41748C;
+    color: var(--primary);
 }
 .coloring:hover {
-    color: var(--light);
     color: white;
-    background-color: var(--secondary);
+    color: var(--light);
     background-color: #31C69A;
+    background-color: var(--secondary);
 }
 dl > dt {
-    color: var(--dark);
     color: #1E1E24;
+    color: var(--dark);
     text-transform: uppercase;
     font-size: 1.05rem;
 }
@@ -171,11 +169,11 @@ dl.right > dd {
 }
 
 h4.title-media {
-    color: var(--light);
     color: white;
+    color: var(--light);
     text-transform: none;
 }
 .footer-social{
-    color:var(--light) !important;
     color: white !important;
+    color: var(--light) !important;
 }
