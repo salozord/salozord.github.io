@@ -1,19 +1,19 @@
 
 window.onload = () => {
 
-    var path = './assets/img/';
-    var images = ['op1.jpg', 'op2.jpg', 'op3.jpg'];
+    let path = './assets/img/';path.con
+    let images = ['op1.jpg', 'op2.jpg', 'op3.jpg', 'op4.jpg'];
 
-    var num = 1;
+    let num = 1;
     function changePic() {
         let pic = document.getElementById('profile-pic');
         let newpic = document.createElement('img');
-        newpic.src = path + images[num++];
+        newpic.src = path.concat(images[num]);
         newpic.classList = pic.classList;
         newpic.id = pic.id;
         newpic.alt = pic.alt;
-
-        if (num === 3) {
+        num++;
+        if (num === images.length) {
             num = 0;
         }
         //pic.classList.remove('fadingIn');
